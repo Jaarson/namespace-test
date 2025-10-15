@@ -19,7 +19,7 @@ function assertEquals(actual, expected) {
 
 // Tests
 test('add(2, 3) should return 5', () => {
-  assertEquals(add(2, 3), 999) // Intentionally wrong for testing failure
+  assertEquals(add(2, 3), 5)
 })
 
 test('multiply(4, 5) should return 20', () => {

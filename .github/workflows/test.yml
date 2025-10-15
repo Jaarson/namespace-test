@@ -25,7 +25,7 @@ jobs:
 
   docker-build-job:
     needs: test-job
-    runs-on: namespace-profile-tiny
+    runs-on: namespace-profile-default
     name: Docker Build Job
 
     steps:
