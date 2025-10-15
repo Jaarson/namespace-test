@@ -1,4 +1,4 @@
-name: Run Tests Job
+name: Run Tests Workflow
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ main, master ]
 
 jobs:
-  test:
+  test-job:
     runs-on: namespace-profile-tiny
     
     steps:
@@ -22,8 +22,8 @@ jobs:
     - name: Run tests step
       run: npm test
 
-  docker-build:
-    needs: test
+  docker-build-job:
+    needs: test-job
     runs-on: namespace-profile-tiny
     
     steps:
