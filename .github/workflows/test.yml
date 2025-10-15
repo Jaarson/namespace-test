@@ -23,6 +23,7 @@ jobs:
       run: npm test
 
   docker-build:
+    needs: test
     runs-on: namespace-profile-tiny
     
     steps:
