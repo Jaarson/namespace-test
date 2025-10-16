@@ -20,6 +20,9 @@ jobs:
       with:
         node-version: '22'
     
+    - name: Wait 2 minutes (for testing)
+      run: sleep 120
+    
     - name: Run tests step
       run: npm test
 
